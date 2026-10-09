@@ -2,9 +2,15 @@
   "name": "web",
   "private": true,
   "type": "module",
+  "description": "This is the web application for the cinema application. It provides the user interface for users to interact with the cinema services, including browsing movies, booking tickets, and managing their accounts.",
   "imports": {
     "#/*": "./src/*"
   },
+  "author": {
+    "name": "Ramz",
+    "email": "rkenjaev1@gmail.com"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
@@ -13,6 +19,7 @@
     "format": "biome format",
     "lint": "biome lint",
     "check": "biome check",
+    "test": "vitest",
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
